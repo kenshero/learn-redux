@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TuT</title>
+</head>
+<body>
+	<h2>Example Object.assign</h2>
+</body>
+<script type="text/javascript">
+
+function reducer(state = {a:"AAA", b:"BBBB"}){
+    var state2 = {};
+    var nextState = Object.assign(state2,
+        state,
+        {a:"Av2", c:"Css"}
+    );
+
+    console.log("state = ", state);
+    console.log("nextState = ", nextState);
+    console.log("state v2 = ", state2);
+}
+
+reducer();
+
+</script>
+</html>
